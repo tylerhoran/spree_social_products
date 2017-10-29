@@ -18,7 +18,7 @@ module Spree
     end
 
     def absolute_image_url(url)
-      return url if url.starts_with? 'http'
+      return url if url.starts_with? 'https'
       request.protocol + request.host + url
     end
 
